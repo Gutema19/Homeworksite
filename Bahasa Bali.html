@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width: device-width, initial-scale:1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ab62b52501.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bahasa Bali</title>
+  </head>
+  <body>
+    <!-- Bagian Header, dan Navbar-->
+     <div class="header">
+       <div class="container">
+         <div class="navbar">
+           <header><i class="fas fa-archway"></i>Homeworksite<br> <span>By Gutema</span> </header>
+             <nav>
+               <ul>
+                 <li><a href="Homeworksite.html"><i class="fas fa-home"></i>Home</a></li>
+                 <li><a href="Feedback.html"><i class="fas fa-comments"></i>Feedback</a></li>
+                 <li><a href="About Web.html"><i class="fas fa-address-card"></i>About Me</a></li>
+                 <li><a href="Contact.html"><i class="fas fa-address-book"></i>Contact</a>
+               </ul>
+            </nav>
+          </div>
+
+          <!--Bagian Content-->
+
+          <div class="content">
+            <h2>Bahasa Bali</h2>
+            <p>Bahasa Bali adalah salah satu bahasa daerah, tidak semua daerah mendapatkan pelajaran ini, namun pada masing-masing daerah
+             tersebut umumnya mempunyai mata pelajaran yang sesuai dengan daerahnya masing-masing. Tujuan di berikan mata pelajaran daerah,
+             agar para siswa mampu memahami dan dapat melestarikannya. Berikut beberapa tugas dari Bahasa Bali</p><br><br>
+            <ul>
+              <li><i class="fas fa-book"></i><a href="Dharma Wacana.html">
+                <span>Contoh Dharma Wacana<span></a></li>
+              <li><i class="fas fa-book"></i><a href="Sejarah Aksara Bali.html">Sejarah Aksara Bali</a></li>
+              <li><i class="fas fa-book"></i><a href="Sejarah Bahasa Bali.html">Sejarah Bahasa Bali</a></li>
+              <li><i class="fas fa-book"></i><a href="Lengkara.html">Lengkara</a></li>
+            </ul>
+          </div>
+
+          <!--Bagian Sidebar-->
+
+          <input type="checkbox" id="check">
+          <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label>
+            <div class="sidebar">
+              <header><i class="fas fa-archway"></i>Homeworksite</header>
+              <ul>
+                <li><a href="Homeworksite.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#" class="feat-btn"><i class="fas fa-scroll"></i>Document<span class="fas fa-angel-down first"></span></a>
+                  <ul class="feat-show">
+                    <li><a href="Bahasa Bali.html"><i class="fas fa-book"></i>Bahasa Bali</a></li>
+                    <li><a href="Bahasa Indonesia.html"><i class="fas fa-book"></i>Bahasa Indonesia</a></li>
+                    <li><a href="Biologi.html"><i class="fas fa-book"></i>Biologi</a></li>
+                    <li><a href="Seni Budaya.html"><i class="fas fa-book"></i>Seni Budaya</a></li>
+                  </ul>
+                </li>
+                <li><a href="Feedback.html"><i class="fas fa-comments"></i>Feedback</a></li>
+                <li><a href="About Web.html"><i class="fas fa-address-card"></i>About Web</a></li>
+                <li><a href="Contact.html"><i class="fas fa-address-book"></i>Contact</a>
+                <li><a href="#" class="serv-btn"><i class=" fas fa-user"></i>Follow My <br>Social Media<span class="fas fa-angel-down second"></span></a>
+                  <ul class="serv-show">
+                    <li><a href="https://www.instagram.com/herry_liukae/?hl=id"><i class=" fab fa-instagram"></i>Instagram</a>
+                    <li><a href="https://www.tiktok.com/@kiritoasuna69?lang=en"><i class=" fab fa-tiktok"></i>Tik-tok</a>
+                  </ul>
+              </ul>
+              </ul>
+              <script type="text/javascript">
+                $('.feat-btn').click(function(){
+                  $('.sidebar ul .feat-show').toggleClass("show")
+                  $('.sidebar ul .first').toggleClass("rotate")
+                });
+                $('.serv-btn').click(function(){
+                  $('.sidebar ul .serv-show').toggleClass("show1")
+                  $('.sidebar ul .second').toggleClass("show1")
+                });
+              </script>
+            </div>
+         </div>
+         <section id="footer">
+            <div class="container footer-row">
+              <div class="footer left-col"></div>
+              <hr>
+                <div class="footer-links">
+                  <div class="link-title">
+                    <h4>About Web</h4>
+                    <small>Dibuat pada tanggal :<br>20 Agustus 2020</small><br>
+                    <small>Selesai pada tanggal:<br>31 Agustus 2020</small>
+                  </div>
+                  <div class="link-title">
+                  <h4>Support</h4>
+                    <small>Features</small><br>
+                    <small>Contact me</small><br>
+                    <small>Feedback</small>
+                  </div>
+                  <div class="link-title">
+                    <h4>Find</h4>
+                    <small>Homework</small><br>
+                    <small>Knowledge</small>
+                  </div>
+                </div>
+              <div class="footer right-col"></div>
+                <div class="footer-info">
+                  <div class="copyright-text">
+                    <small>copyright 2020 Homeworksite</small><br><br>
+                    <small><span><i class="fas fa-archway"></i>Homeworksite</span></header>
+                  </div>
+                </div>
+            </div>
+          </section>
+      </div>
+  </body>
+</html>

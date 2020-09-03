@@ -1,0 +1,809 @@
+@import url('https://googleapis.com');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Style bagian Header, container, dan navbar*/
+
+/* Style Header */
+
+.header {
+ width: 100%;
+ background: #191970;
+ background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(Library.jpg);
+ background-position: center;
+ background-size: cover;
+ height: auto;
+}
+
+/* Style Container */
+
+.container {
+   max-width: 2200px;
+   margin: 0 auto;
+   padding: 0 100px;
+   margin-right: 0;
+   margin-left: 0;
+}
+
+/* Style navbar */
+
+.navbar header {
+  font-family: sans-serif;
+  font-size: 35px;
+  color: white;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  padding: 5px 2px;
+}
+nav ul li:hover a{
+  border-bottom: 1px solid #fff;
+}
+
+/* Style bagian content */
+
+.content{
+  max-width: 600px
+  color: #fff;
+  margin-top: 15%;
+}
+ .content h1,h2 {
+  font-size: 40px;
+  line-height: 70px;
+  letter-spacing: 1px;
+  margin: 15px 0;
+  color: #191970;
+}
+ .content p {
+   font-size: 15px;
+   line-height: 21px;
+   color: white;
+   font-family: sans-serif;
+   margin-right: 480px;
+ }
+ header span {
+   font-size: 25px;
+   font-family: courier;
+ }
+ .content pre {
+   color: white;
+   font-size: 20px;
+ }
+ .square{
+   height: 12px;
+   width: 12px;
+   display: inline-block;
+   background: #191970;
+   margin: 15px 0;
+ }
+
+/* Style content bagian home, button start dan learn more */
+
+ .btn-box {
+   margin-top: 20px
+ }
+ button {
+   width: 150px;
+   border: 1px solid white;
+   color: #191970;
+   padding: 10px;
+   margin-right:10px;
+   border-radius: 25px;
+   cursor: pointer;
+   background: white;
+ }
+ .btn {
+   border: 1px solid #191970;
+   background: transparent;
+ }
+ /* Style content bagian dalam cabang-cabang dokumen(Bahasa Bali,Bahasa Indonesia,dll) */
+
+ .content ul li{
+   display: inline-block;
+   margin: 0 5px;
+   background: white;
+   color: #191970;
+   cursor: pointer;
+   width: 60px;
+   height: 60px;
+   line-height: 65px;
+   border-radius: 50px;
+   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+   overflow: hidden;
+   font-size: 15px;
+ }
+ .content ul li:hover{
+   width: 300px;
+ }
+ .content ul li i{
+   display: inline-block;
+   height: 60px;
+   width: 60px;
+   text-align:center;
+   line-height: 65px;
+   font-size: 22px;
+ }
+
+/* Style content bagian feedback */
+
+.content .contact-title p{
+  text-align: center;
+}
+.contact-title {
+  transition: all 4s ease-in-out;
+}
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+.form-control {
+  width: 300px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #191970;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+input {
+  height: 45px;
+}
+
+form .submit {
+  border: 1px solid white;
+  color: #191970;
+  padding: 10px;
+  margin-right:10px;
+  border-radius: 25px;
+  cursor: pointer;
+  background: white;
+  width: 150px;
+  ou
+}
+form .submit:hover {
+color: white;
+background-color: #191970;
+}
+
+/* Style content bagian about me */
+
+.container .card .img img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  height: 290px;
+  width: 350px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  background: white;
+  transition: 0.4s;
+  margin: 0 20px;
+}
+.card:hover {
+  height: 480px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+
+}
+.card .top-text{
+  padding:5px;
+}
+.card .top-text .name {
+  font-size: 25px;
+  font-weight: 600;
+  color: #191970;
+  text-align: center;
+}
+.card .top-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: darkcyan;
+  line-height: 25px;
+  text-align: center;
+}
+.card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+.card .bottom-text .btn{
+  margin-top: 10px 0;
+  text-align: left;
+}
+.card .bottom-text .btn a{
+  text-decoration: none;
+  background: #191970;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn:hover a{
+  transform: scale(0.9);
+}
+.card .img{
+  height: 200px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #f2f2f2;
+  text-align: left;
+}
+
+.content span {
+  text-align:
+}
+
+ /* Style bagian sidebar */
+
+ .sidebar {
+   position: fixed;
+   top: 0;
+   left: -250px;
+   width: 250px;
+   height: 100vh;
+   background: rgba(100,25,255,0.5);
+ }
+ .sidebar header{
+   font-size: 20px;
+   color: white;
+   text-align: center;
+   line-height: 70px;
+   background: #191970;
+   user-select: none;
+ }
+ .sidebar ul a {
+   display: block;
+   height: 100%;
+   width: 200px;
+   line-height: 70px;
+   font-size: 20px;
+   color: white;
+   padding-left: 36px;
+   border-top: 1px solid rgba(255,255,255,0.1);
+   border-bottom: 1px solid black;
+   transition:  .4s;
+ }
+ul li a:active{
+  padding-left: 45px;
+  border-left: 2px solid slateblue;
+  background: white;
+  color: #191970;
+  width: 200px;
+}
+ul ul li:hover a {
+  padding-left: 15px;
+  border-left: 2px solid slateblue;
+  background: white;
+  color: #191970;
+  width: 200px;
+}
+.sidebar ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 30px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border: 3px solid transparent;
+}
+.sidebar ul li {
+  margin-right: 16px;
+}
+.sidebar ul ul {
+  position: static;
+  display: none;
+}
+.sidebar ul .feat-show.show{
+  display: block;
+}
+.sidebar ul .serv-show.show1{
+  display: block;
+}
+.sidebar ul ul li {
+  line-height: 42px;
+  border-bottom: none;
+}
+.sidebar ul ul li {
+  font-size: 17px;
+  color: white;
+  padding-left: 50px;
+}
+
+
+.sidebar ul li a span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0,5s;
+}
+.sidebar ul li a span .rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
+#check {
+  display: none;
+}
+label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background-color: #191970;
+  border-radius: 3px;
+}
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel {
+  z-index: 1111;
+  left: -210px;
+  top: 0;
+  font-size: 30px;
+  color: white;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked~.sidebar{
+  left: 0;
+}
+#check:checked~label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked~label #cancel{
+  left: 210px;
+}
+#check:checked~ .header{
+  margin-left: 250px;
+}
+
+/* Bagian Footer */
+
+#footer {
+  padding: 50px 0 30px;
+}
+hr {
+  margin-top: 150px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #191970;
+}
+ .footer-row{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+ .footer-left-col{
+   flex-basis: 50%;
+   margin-top: 60px;
+ }
+ .footer-right-col{
+   flex-basis: 35%;
+ }
+.footer-links{
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.link-title {
+  padding: 30px 30px 10px 5px;
+}
+.link-title h4{
+  color: #191970;
+  margin-bottom: 25px;
+}
+.link-title small{
+  color: #777;
+  font-size: 14px;
+  font-family: serif;
+}
+.footer-info {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.copyright-text {
+  color: #777;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.copyright-text span{
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+/* Style bagian tambahan */
+
+.aside {
+  width: 80px;
+  height: 150vh;
+  position: absolute;
+  background: #191970;
+  top: 0;
+  right: 0;
+}
+.aside p {
+  font-size: 20px;
+  font-family: courier;
+  color: white;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  line-height: 50px;
+}
+
+
+/* Style css web tampilan di hp */
+@media only screen and (max-width: 900px){
+  .header {
+   width: 50%;
+  }
+
+  /* Style Container */
+
+  .container {
+     max-width: 1100px;
+     margin: 0 auto;
+     padding: 0 50px;
+     margin-right: 0;
+     margin-left: 0;
+  }
+
+  /* Style navbar */
+
+  .navbar header {
+    font-size: 17.5px;
+  }
+  .navbar {
+    width: 100%;
+    padding: 15px 0;
+  }
+  nav ul li {
+    margin-right: 15px;
+  }
+  nav ul li a {
+    font-size: 8.5px;
+    padding: 2.5px px;
+  }
+
+  /* Style bagian content */
+
+  .content{
+    max-width: 300px
+    margin-top: 7.5%;
+  }
+   .content h1,h2 {
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    margin: 7.5px 0;
+  }
+   .content p {
+     font-size: 7.5px;
+     line-height: 10.5px;
+     margin-right: 100px;
+   }
+   header span {
+     font-size: 12.5px;
+   }
+   .content pre {
+     font-size: 10px;
+   }
+   .square{
+     height: 6px;
+     width: 6px;
+     margin: 7.5px 0;
+   }
+
+  /* Style content bagian home, button start dan learn more */
+
+   .btn-box {
+     margin-top: 10px
+   }
+   button {
+     width: 70px;
+     padding: 5px;
+     margin-right: 5px;
+     border-radius: 10px;
+     font-size: 7px;
+   }
+
+   /* Style content bagian dalam cabang-cabang dokumen(Bahasa Bali,Bahasa Indonesia,dll) */
+
+   .content ul li{
+     margin: 0 2.5px;
+     width: 30px;
+     height: 30px;
+     line-height: 32.5px;
+     border-radius: 25px;
+     box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+     font-size: 5px;
+   }
+   .content ul li:hover{
+     width: 100px;
+   }
+   .content ul li i{
+     height: 30px;
+     width: 30px;
+     line-height: 32.5px;
+     font-size: 11px;
+   }
+
+  .content img {
+    width: 80px;
+    height: 150px;
+  }
+  table{
+    font-size: 8px;
+    margin: 10px;
+  }
+
+
+
+
+  /* Style content bagian feedback */
+
+  .content textarea{
+    font-size: 10px;
+  }
+  .content #send {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 12.5px;
+    width: 75px
+  }
+  form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+  }
+  .form-control {
+    width: 90px;
+    font-size: 7px;
+    margin-bottom: 8px;
+  }
+  input {
+    height: 10px;
+  }
+
+  form .submit {
+    padding: 5px;
+    margin-right:5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    width: 40px;
+  }
+  /* Style content bagian about me */
+
+  .card {
+    height: 145px;
+    width: 135px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    margin: 0 10px;
+  }
+  .card:hover {
+    height: 240px;
+    box-shadow: 2.5px 2.5px 5px rgba(0,0,0,0.2);
+
+  }
+  .card .top-text{
+    padding:2.5px;
+  }
+  .card .top-text .name {
+    font-size: 12.5px;
+    font-weight: 300;
+  }
+  .card .top-text p {
+    font-size: 7px;
+    font-weight: 300;
+    line-height: 12.5px;
+  }
+  .card .bottom-text{
+    padding: 0 10px 5px 10px;
+    margin-top: 2.5px;
+    font-size: 7px;
+  }
+  .card .bottom-text .btn{
+    margin-top: 5px 0;
+  }
+  .card .bottom-text .btn a{
+    padding: 2.5px 4px;
+    border-radius: 1.5px;
+  }
+  .card .img{
+    height: 100px;
+    width: 50%;
+  }
+  .card .img img{
+    height: 50%;
+    width: 50%;
+  }
+  .card html,body{
+    height: 50%;
+  }
+  .content .text {
+    font-size: 8px;
+    font-family: sans-serif;
+  }
+  .content .text pre{
+    font-family: sans-serif;
+    text-align: left;
+  }
+   /* Style bagian sidebar */
+
+   .sidebar {
+     top: 0;
+     left: -163px;
+     width: 125px;
+     height: 100vh;
+   }
+   .sidebar header{
+     font-size: 10px;
+     line-height: 45px;
+   }
+   .sidebar ul a {
+     height: 50%;
+     width: 100px;
+     line-height: 45px;
+     font-size: 10px;
+     padding-left: 18px;
+   }
+  ul li a:active{
+    padding-left: 22.5px;
+    width: 100px;
+  }
+  ul ul li:hover a {
+    padding-left: 7.5px;
+    width: 100px;
+  }
+  .sidebar ul li a {
+    font-size: 9px;
+    padding-left: 15px;
+    font-weight: 250;
+    width: 50%;
+  }
+  .sidebar ul li {
+    margin-right: 8px;
+  }
+  .sidebar ul ul li {
+    line-height: 21px;
+  }
+  .sidebar ul ul li {
+    font-size: 5px;
+    padding-left: 5px;
+  }
+  .sidebar ul li a span {
+    top: 25%;
+    right: 10px;
+    font-size: 11px;
+  }
+  label #btn, label #cancel {
+    border-radius: 1.5px;
+  }
+  label #btn {
+    left: 170px;
+    top: 12.5px;
+    font-size: 17.5px;
+    padding: 3px 6px;
+  }
+  label #cancel {
+    z-index: 1111
+    left: -200px;
+    top: 0;
+    font-size: 15px;
+    padding: 2px 4.5px;
+  }
+  #check:checked~.sidebar{
+    left: 163px;
+  }
+  #check:checked~label #btn{
+    left: 170px;
+    opacity: 0;
+  }
+  #check:checked~label #cancel{
+    left: 268px;
+  }
+  #check:checked~ .header{
+    margin-left: 163px;
+  }
+
+  /* Bagian Footer */
+
+  #footer {
+    padding: 25px 0 15px;
+  }
+  hr {
+    margin-top: 75px;
+    width: 50%;
+    border: 0;
+  }
+   .footer-left-col{
+     flex-basis: 25%;
+     margin-top: 30px;
+   }
+   .footer-right-col{
+     flex-basis: 17.5%;
+   }
+  .link-title {
+    padding: 15px 15px 15px 15px;
+  }
+  .link-title h4{
+    margin-bottom: 12.5px;
+  }
+  .link-title small{
+    font-size: 7px;
+  }
+  .copyright-text {
+    font-size: 7px;
+  }
+  .copyright-text span{
+    font-size: 10px;
+  }
+
+  /* Style bagian tambahan */
+
+  .aside {
+    width: 40px;
+    height: 75vh;
+    top: 0;
+    right: 163px;
+  }
+  .aside p {
+    font-size: 10px;
+    margin: 5px;
+    line-height: 25px;
+  }
